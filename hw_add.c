@@ -24,14 +24,18 @@ union FifoCtrlWrite
       uint32 DUMMY : 16;
    };
 };
+
+/* return FifoCtrlWrite register*/
 U32 read_reg32(U32 addr)
 {
     return 1;
-}/* return FifoCtrlWrite register*/
+}
+
+/*write value_in into FifoCtrlWrite register*/
 void write_reg32(U32 addr, U32 value_in)
 {
   return;
-} /*write value_in into FifoCtrlWrite register*/
+}
 
 union FifoCtrlRead
 {
